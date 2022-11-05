@@ -91,6 +91,21 @@ header a{
   background-color: green;
 }
 
+@media
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+        .hero {
+            background-repeat: repeat;
+            background-image: url("../public/images/heros/hero-image_2-small.jpg");
+        }
+}
+@media
+(min-width: 800px) {
+    .hero {
+        background-image: url("../public/images/heros/hero-image_2.jpg");
+    }
+}
+
 .heroInner {
   margin: 0 auto;
   max-width: 800px;
@@ -229,20 +244,6 @@ main {
 .post-label {
   text-align: center;
   font-weight: lighter;
-}
-
-/* searchfavorite */
-.query {
-  padding: 50px;
-}
-
-.query-wrapper {
-  display: flex;
-  margin-top: 30px;
-  margin-left: 70px;
-  margin-bottom: 10px;
-  justify-content: start;
-  align-items: center ;
 }
 
 @media screen and (min-width: 450px) {

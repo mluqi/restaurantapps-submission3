@@ -52,10 +52,10 @@ const Detail = {
     const data = await DataSource.detailRestaurant(url.id);
     const restaurantContainer = document.querySelector('#container');
     restaurantContainer.innerHTML = createRestaurantDetailTemplate(data.restaurant);
-    console.log(data.restaurant);
+
     LikeButtonPresenter.init({
       likeButtonContainer: document.querySelector('#likeButtonContainer'),
-      favoriteRestaurant: FavoriteRestaurantIdb,
+      favoriteRestaurants: FavoriteRestaurantIdb,
       restaurant: {
         id: data.restaurant.id,
         name: data.restaurant.name,
